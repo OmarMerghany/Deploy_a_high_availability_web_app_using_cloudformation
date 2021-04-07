@@ -17,3 +17,6 @@ aws cloudformation create-stack --stack-name OmarMerghanyProj02 --template-body 
 ```
 aws cloudformation create-stack --stack-name WebServerStack --template-body file://servers.yml  --parameters file://server-parameters.json --capabilities "CAPABILITY_IAM" "CAPABILITY_NAMED_IAM" --region=us-west-2
 ```
+## Output Website
+Go to the exported DNS endpoint, the output should look like
+![Diagram](outputWebsite.PNG)
