@@ -10,6 +10,14 @@
 
 	{
 	  "ParameterKey": "InstanceType",
-	  "ParameterValue": "t3.medium"
+	  "ParameterValue": "t2.micro"
+	},
+	{
+		"ParameterKey": "MinNoInstance",
+		"ParameterValue": "2"
+	},
+	{
+	  "ParameterKey": "MaxNoInstance",
+	  "ParameterValue": "4"
 	}
 ]

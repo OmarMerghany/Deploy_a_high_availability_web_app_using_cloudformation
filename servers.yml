@@ -14,6 +14,14 @@ Parameters:
       Type: String
       Default: t3.medium
       ConstraintDescription: Must be a valid EC2 instance type greater than 4GB RAM. 
+    
+    MinNoInstance:
+      Type: String
+      Default: 3
+    MaxNoInstance:
+      Type: String
+      Default: 5
+
 
 Resources:
   LBSecGroup:
@@ -82,8 +90,8 @@ Resources:
           !Sub "${EnvironmentName}-PRIV-NETS"
       LaunchConfigurationName:
         Ref: WebAppLaunchConfig
-      MinSize: '4'
-      MaxSize: '6'
+      MinSize: !Ref MinNoInstance
+      MaxSize: !Ref MaxNoInstance
       TargetGroupARNs:
       - Ref: WebAppTargetGroup
 

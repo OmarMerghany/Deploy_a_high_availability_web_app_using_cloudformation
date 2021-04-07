@@ -1,4 +1,8 @@
-# Deploy_a_high_availability_web_app_using_cloudformation
+# Deploying a high availability web app using CloudFormation
+
+## LoadBalancer URL
+http://webse-webap-1axkdiudubpx2-1310691287.us-west-2.elb.amazonaws.com/
+
 
 ## Architecture Diagram
 
@@ -17,6 +21,8 @@ aws cloudformation create-stack --stack-name OmarMerghanyProj02 --template-body 
 ```
 aws cloudformation create-stack --stack-name WebServerStack --template-body file://servers.yml  --parameters file://server-parameters.json --capabilities "CAPABILITY_IAM" "CAPABILITY_NAMED_IAM" --region=us-west-2
 ```
+
 ## Output Website
+
 Go to the exported DNS endpoint, the output should look like
 ![Diagram](outputWebsite.PNG)
