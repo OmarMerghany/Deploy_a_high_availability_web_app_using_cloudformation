@@ -5,7 +5,7 @@
 ![Diagram](HighlyAvailableWebApplication.jpeg)
 
 The **network.yaml** file is for creating the network VPC, Subnets etc. using the **network-parameters.json** as input parameters.
-The webservers which include the Load Balancer, AutoScaling Groups and Security Groups are created using **servers.yaml** using the **server--parameters.json** file as the input.
+The webservers which include the Load Balancer, AutoScaling Groups and Security Groups are created using **servers.yaml** using the **server-parameters.json** file as the input.
 
 ## Instructions
 
