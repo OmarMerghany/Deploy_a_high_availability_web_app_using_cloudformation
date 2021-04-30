@@ -1,9 +1,5 @@
 # Deploying a high availability web app using CloudFormation
 
-## LoadBalancer URL
-http://webse-webap-1axkdiudubpx2-1310691287.us-west-2.elb.amazonaws.com/
-
-
 ## Architecture Diagram
 
 ![Diagram](HighlyAvailableWebApplication.jpeg)
